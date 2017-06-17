@@ -1,4 +1,6 @@
-# roles/bind/tasks/main.yml
+## roles/bind/tasks/main.yml
+## Role main file
+# vim:ft=ansible
 ---
 
 # Initialise distribution-specific variables
@@ -32,7 +34,7 @@
   tags: bind
 
 - name: Create serial, based on last two digits of year, month, day, and hour
-  command: date +%y%m%d%H
+  command: date +%y%m%d%H%M
   register: timestamp
   changed_when: false
   tags: bind
