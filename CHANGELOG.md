@@ -4,6 +4,12 @@ This file contains al notable changes to the bind Ansible role.
 
 This file adheres to the guidelines of [http://keepachangelog.com/](http://keepachangelog.com/). Versioning follows [Semantic Versioning](http://semver.org/).  "GH-X" refers to the X'th issue/pull request on the Github project.
 
+## 3.7.0-1 - 2017-06-17
+### Forked
+- Forked from bertvv's repo and minor adjustments to file layout.
+### Changed
+- Timestamp serial increased accuracy.
+
 ## 3.7.0 - 2017-06-0X
 
 ### Added

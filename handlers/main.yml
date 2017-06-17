@@ -1,7 +1,8 @@
-# roles/bind/handlers/main.yml
+## roles/bind/handlers/main.yml
+#vim:ft=ansible:
 ---
-
 - name: restart bind
   service:
     name: "{{ bind_service }}"
     state: restarted
+...

@@ -1,6 +1,6 @@
-# roles/bind/defaults/main.yml
+## roles/bind/defaults/main.yml
+# vim:ft=ansible:
 ---
-
 bind_log: "data/named.run"
 
 bind_zone_name: "example.com"
@@ -59,3 +59,4 @@ bind_zone_mail_servers: []
 bind_zone_name_servers: []
 bind_zone_services: []
 bind_zone_text: []
+...
