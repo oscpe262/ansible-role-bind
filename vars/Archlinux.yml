@@ -1,0 +1,21 @@
+## roles/bind/vars/Archlinux.yml
+#vim:ft=ansible:
+---
+bind_packages:
+  - bind
+
+bind_service: named
+
+# Main config file
+bind_config: /etc/named.conf
+
+# Localhost zone
+bind_default_zone_files:
+  - /etc/bind/named.conf.default-zones
+
+# Directory with run-time stuff
+bind_dir: /var/named
+
+bind_owner: named
+bind_group: named
+...
