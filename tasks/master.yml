@@ -1,7 +1,7 @@
-# roles/bind/tasks/master.yml
-# Set up a BIND master server
+## roles/bind/tasks/master.yml
+## Set up a BIND master server
+# vim:ft=ansible:
 ---
-
 - name: Master | Main BIND config file (master)
   template:
     src: master_etc_named.conf.j2
@@ -51,4 +51,4 @@
   with_items: "{{ bind_zone_ipv6_networks }}"
   #notify: restart bind
   tags: bind
-    
+...    

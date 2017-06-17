@@ -2,7 +2,6 @@
 ## Role main file
 # vim:ft=ansible
 ---
-
 # Initialise distribution-specific variables
 - include_vars: "{{ item }}"
   with_first_found:
@@ -51,4 +50,4 @@
     state: started
     enabled: yes
   tags: bind
-
+...
