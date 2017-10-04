@@ -38,10 +38,10 @@
   changed_when: false
   tags: bind
 
-- include: master.yml
+- include_tasks: master.yml
   when: bind_zone_master_server_ip in ansible_all_ipv4_addresses
 
-- include: slave.yml
+- include_tasks: slave.yml
   when: bind_zone_master_server_ip not in ansible_all_ipv4_addresses
 
 - name: Start BIND service
