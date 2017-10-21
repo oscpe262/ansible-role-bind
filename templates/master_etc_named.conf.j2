@@ -50,6 +50,10 @@ logging {
   };
 };
 
+statistics-channels {
+  inet 127.0.0.1 port 8053 allow {127.0.0.1;};
+};
+
 {% for file in bind_default_zone_files %}
 include "{{ file }}";
 {% endfor %}

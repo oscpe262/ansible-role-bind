@@ -50,4 +50,13 @@
     state: started
     enabled: yes
   tags: bind
+
+- name: Add firewall exceptions
+  firewalld:
+    service: dns
+    permanent: true
+    state: enabled
+    immediate: true
+  when: "'RedHat' in ansible_os_family"
+
 ...
