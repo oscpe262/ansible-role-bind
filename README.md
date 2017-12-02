@@ -1,6 +1,6 @@
 # Ansible role `bind`
 
-First and foremost: this is mainly a fork of bertvv's role. I suggest that you go [straight there](https://github.com/bertvv/ansible-role-bind) rather than using this one, as this one is experimental and poorly maintained and documented. It's just here because it the original is a great role, I wanted it in a repo of my own with the small personalizations, and I can't be arsed to redo such extensive work when it has already been done. ;)
+First and foremost: this is mainly a fork of bertvv's role. I suggest that you go [straight there](https://github.com/bertvv/ansible-role-bind) rather than using this one, as this one is experimental and poorly maintained and documented. It's just here because the original is a great role, I wanted it in a repo of my own with the small personalizations, and I can't be arsed to redo such extensive work when it has already been done. ;)
 
 An Ansible role for setting up BIND ISC as an authoritative DNS server for a single domain on EL7 or Ubuntu Server. Specifically, the responsibilities of this role are to:
 
